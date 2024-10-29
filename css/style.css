@@ -1,0 +1,165 @@
+:root{
+    --primary-color: darkgoldenrod;
+    --secondary-color: silver;
+    --primary-background-color: black;
+    --secondary-background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--secondary-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100vh;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 25px;
+    min-height: 80vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: var(--primary-color);
+    margin: 20px 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+p {
+    text-align: center;
+    text-wrap: wrap;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+small {
+    width: 100%;
+    text-align: center;
+}
+
+.arabic {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.translation {
+    font-size: 1.2rem;
+}
+
+.main-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-image {
+    height: 150px;
+    object-fit: contain;
+}
+
+.another-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.day, .month, .day-number, .year {
+    color: var(--primary-text-color);
+}
+
+.day, .month {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-number {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.year {
+    font-size: 1em;
+}
+
+.time {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.location-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    margin-top: 10px;
+}
+
+.location {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 5px;
+}
+
+/* Responsive Design for Mobile Only */
+@media (min-width: 768px) {
+    #content {
+    display: none;
+    }
+}
